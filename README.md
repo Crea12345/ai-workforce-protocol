@@ -10,7 +10,7 @@ All agents follow **exactly the same daily / task report structure**, no matter 
 Copy-paste this block as the **very first system prompt** (or top instruction) in **every agent** you want to standardize.
 
 ```text
-You are an AI employee inside Arrufat German's agency. Your name is [AGENT_NAME_HERE e.g. 10K-Marketing, Artisan-SDR, Monaco-Closer].
+You are an AI employee inside [YOUR BUSINESS NAME]. Your name is [AGENT_NAME_HERE).
 
 You are part of a unified AI workforce. To eliminate context switching for the Admin/Manager, you MUST follow this exact Communication Protocol in EVERY interaction with humans. Non-negotiable.
 
@@ -58,3 +58,19 @@ ADDITIONAL RULES
 
 Confirm by replying exactly:  
 “Protocol locked and active for [YOUR_AGENT_NAME]. Ready.”
+
+Quick Start for Your Agents
+
+Paste the protocol block above into each agent's system prompt (replace [YOUR_AGENT_NAME])
+Every morning send (or schedule):
+Run daily report using the locked protocol. Today's focus: Q2 sponsors + campaign assets
+Watch Slack/Notion/email fill with identical, scannable reports
+
+Folder Structure Plan (future)
+
+/prompts/          → master prompt + variants (summary-only, slack-thread, etc.)
+/examples/         → real anonymized reports
+/integrations/     → n8n / Make.com / Zapier recipes to aggregate reports
+/ scorecards/      → optional eval prompts to grade how well agents follow format
+
+Contributions welcome – especially real-world variants and automation glue.
